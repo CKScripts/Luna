@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<head>
+    <title>Lu&#173;na</title>
+    <link href="/Images/Luna.png">
+    <link rel="icon" type="image/x-icon" href="/Images/Luna.png">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="CKScripts"/>
+    <meta name="description" content="Welcome to Luna!"/>
+
+    <link rel="stylesheet"
+  href="https://fonts.googleapis.com/css?family=Open Sans">
+</head>
+<style>
+    :root {
+        width: 100vw;
+        height: 100vh;
+        background-image: linear-gradient(45deg, rgb(35,57,93) 0%,rgb(86,54,167) 100%);
+    }
+
+    .MainFrame {
+        display: flex;
+        flex-direction: column;
+        box-sizing: border-box;
+        min-height: 99vh;
+        padding: 40px 48px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .SearchFrame {
+        max-width: 768px;
+    }
+
+    .SearchLogoHolder {
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 50px;
+    }
+
+    .SearchLogo {
+
+        background: url("/Images/Luna.png") no-repeat center center;
+        background-image: url("/Images/Luna.png");
+        background-size: auto;
+        background-size: 124px;
+        display: inline-block;
+        height: 124px;
+        width: 124px;
+        border-radius: 100%;
+    }
+
+    .SearchbarWrap {
+        display: flex;
+        flex-direction: column;
+        height: 44px;
+        margin: 10px auto;
+        position: relative;
+        width: 600px;
+    }
+
+    .SearchbarInput {
+        background-color: white;
+        border: none;
+        border-radius: 5px;
+        color: inherit;
+        height: 100%;
+        padding: 0 15px;
+        width: 100%;
+        z-index: 1;
+    }
+</style>
+<body>
+    <div class="MainFrame">
+        <div class="SearchFrame">
+            <div class="SearchLogoHolder">
+                <div class="SearchLogo"></div>
+            </div>
+            <div class="SearchbarWrap">
+                <input type="text" placeholder="Search" autocomplete="off" class="SearchbarInput" required="">
+            </div>
+        </div>
+    </div>
+</body>
